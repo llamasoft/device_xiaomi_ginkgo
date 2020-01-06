@@ -7,14 +7,14 @@
 
 set -e
 
-DEVICE=ginkgo
+DEVICE=willow
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-MK_ROOT="${MY_DIR}"/../../..
+MK_ROOT="${MY_DIR}"/../../../..
 
 HELPER="${MK_ROOT}/vendor/aosp/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
